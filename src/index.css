@@ -16,17 +16,23 @@ body {
   background-repeat: no-repeat, no-repeat;
 }
 
+
 #line-btm{
   left: 0px;
   position: absolute;
-  top: 57%;
+  top: 63%;
+  z-index: -1;
 }
 #line-top{
   position: absolute;
   right: 0px;
+  bottom: 50%;
 }
 #circle{
   position: absolute;
+  right: 20%;
+  top: 60%;
+  z-index: -1;
 }
 
 .page-container {
@@ -78,6 +84,61 @@ form h2 {
   color:white;
 }
 
+.hero{
+ 
+  display: flex;
+  align-content:flex-start;
+  width: 100%;
+  max-width: 400px;
+}
+#drop-area{
+   border: 1px dashed #ccc; 
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  outline: none;
+  background-color: rgba(45, 43, 61,0.5);
+  cursor: pointer;
+  color: white; 
+  height: 15vh;
+  width: 26vw;
+}
+#img-view{
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 30px;  
+}
+#hero-sub{
+   margin-bottom: 0.5rem;
+  color: white;
+}
+#img-sub{
+  text-align: center;
+  padding-top: 12px;
+}
+.info-container{
+  display: flex;
+  gap: 5px;
+  align-content: center;
+}
+#sub{
+  color: white;
+  font-size: 10px;
+margin-top: 15px;
+  
+}
+.icon-info{
+  
+  margin-top: 12px;
+}
+#img{
+  width: 37px;
+  height: 37px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin-left:9vw;
+  background-color:rgba(45, 43, 61,0.5); ;
+}
 
 .form-group {
   display: flex;
@@ -92,7 +153,7 @@ form h2 {
 
 .form-group small {
   font-size: 0.85rem;
-  color: #666;
+  color: #6667;
   margin-top: 0.25rem;
 }
 input[type="file"] {
@@ -103,8 +164,9 @@ input[type="file"] {
   outline: none;
   background-color: rgb(45, 43, 61);
   opacity: 0.3;
-  cursor: pointer; 
+  cursor: pointer;  
 }
+
 input[type="text"],
 input[type="email"] {
   padding: 0.6rem 0.8rem;
@@ -112,9 +174,12 @@ input[type="email"] {
   border: 1px solid #ccc;
   font-size: 1rem;
   outline: none;
-  background-color:rgb(45, 43, 61);
+  background-color: rgba(45, 43, 61,0.5);
   opacity: 0.3;
  
+}
+input::placeholder{
+  color: rgba(247, 244, 244, 0.5);
 }
 
 input:focus {
@@ -125,9 +190,11 @@ button {
   padding: 0.8rem;
   border: none;
   border-radius: 6px;
-  background-color:indianred;
-  color: white;
-  font-size: 1rem;
+  background-color:rgb(173, 79, 79);
+  color: rgb(25, 22, 53);
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: 'Inconsolata', monospace;
   cursor: pointer;
   transition: background-color 0.3s;
 }
