@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Generator</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="page-container">
+    
+    <header class="header">
+      <img src="../assets/images/logo-full.svg" alt="Logo" class="logo">
+      <h1 class="title">
+        Your Journey to Coding Conf<br>2025 Starts Here!
+      </h1>
+      <p class="subTitle">Secure your spot at next year's biggest coding conference</p>
+    </header>
+
+<div>
+    <img src="../assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="" id="line-btm">
+    <img src="../assets/images/pattern-circle.svg" alt="" id="circle">
+    <img src="../assets/images/pattern-squiggly-line-top.svg" alt="" id="line-top">
+</div>  
+    <div class="form-container">
+      <form action="#" method="post" enctype="multipart/form-data" id="myForm">
+      
+
+        <div class="form-group">
+          <label for="image">Upload Avatar</label>
+          
+          <input type="file" id="image" name="image" accept="image/*" required>
+          <small>Upload your photo (JPG or PNG max size: 500KB).</small>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" name="fullName" id="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="gitName">GitHub Username</label>
+          <input type="text" name="gitName" id="gitName" placeholder="@yourusername" required>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Get My Ticket</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
